@@ -4,12 +4,11 @@ const removeFromArray = function (...args) {
     if (i > 0) {
       const exists = arr.includes(arg);
       if (exists) {
-        const removed = arr.splice(i, 1);
-        console.log('removed:', removed);
+        const idx = arr.indexOf(arg);
+        arr.splice(idx, 1);
       }
     }
   }
-  console.log('arr:', arr);
   return arr;
 };
 

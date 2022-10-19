@@ -14,8 +14,12 @@ const sum = function (arr) {
   );
 };
 
-const multiply = function (num1, num2) {
-  return num1 * num2;
+const multiply = function (arr) {
+  const initialValue = 1;
+  return arr.reduce(
+    (previousValue, currentValue) => previousValue * currentValue,
+    initialValue
+  );
 };
 
 const power = function (num1, num2) {
